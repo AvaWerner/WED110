@@ -1,0 +1,72 @@
+/*Style sheet for form Page*/
+/*Ava Werner 7/18/25*/
+/*Wrapper Controls*/
+* {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Head Controls*/
+header {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    padding: 2rem;
+    font-family: Arial ;
+    font-size: 4rem;
+    padding-top:0rem;
+}
+h1 {
+    text-align: center;
+}
+/*Main Controls*/
+body {
+    background: url(formBG.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+form {
+    border-radius: 3rem;
+    height: fit-content;
+    width: fit-content;
+    padding: 5rem;
+    text-align: left;
+    background-color: white;
+}
+/*Adress controls*/
+#adress fieldset {
+    padding: 5px;
+}
+/*Footer controls*/
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+}
+footer a {
+    color: black;
+}
+a:hover {
+    border: 3px solid black;
+}
+
+/*This is the small screen controls*/
+@media(max-width: 800px) {
+     
+    body {
+        background-size: cover;
+    }
+    h1 {
+        font-size: smaller;
+    }
+    form {
+        margin: 3%;
+        padding: 5%;
+    }
+}
+

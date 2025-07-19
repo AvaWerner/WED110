@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--Ava Werner 7/18/25-->
+<!--News Letter Page-->
+<html lang="en">
+    <head>
+        <title>News Letter</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="formstyle.css">
+    </head>
+    <body>
+        <header>
+            <h1>News Letter Sign Up</h1>
+        </header>
+        <main>
+            <div class="wrapper">
+                <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                    <div id="Name">
+                        <!--Fisrt Name Required-->
+                        <label for="Fname">First Name:</label>
+                        <input type="text" name="First_Name" id="Fname" placeholder="First Name" required><br>
+                        <br>
+                        <!--Middle Name Optioanal-->
+                        <label for="Mname">Middle Name:</label>
+                        <input type="text" name="Middle_Name" id="Mname" placeholder="Optioanal"><br>
+                        <br>
+                        <!--Last Name Required-->
+                        <label for="Lname">Last Name:</label>
+                        <input type="text" name="Last_Name" id="Lname" placeholder="Last Name" required><br>
+                    </div>
+                    <br>
+                    <div id="Character">
+                        <!--First set of radio buttons-->
+                        <p><b>Check The Best Option:</b></p>
+                        <label for="radio1">Mr.</label>
+                        <input type="radio" name="radio" id="radio1" value="Mr.">
+                        <label for="radio2">Mrs.</label>
+                        <input type="radio" name="radio" id="radio2" value="Mrs.">
+                        <label for="radio3">PhD.</label>
+                        <input type="radio" name="radio" id="radio3" value="PhD.">
+                        <label for="radio4">Other</label>
+                        <input type="radio" name="radio" id="radio4" value="Other">
+                    </div>
+                    <br>
+                    <div id="Birthday">
+                        <!--Birthday controls-->
+                        <label for="Bday">Birthday:</label>
+                        <input type="date" name="Bday" id="Bday">
+                    </div>
+                    <br>
+                    <div id="NewsCategory">
+                        <!--Second set of radio buttons-->
+                        <p><b>Category:</b></p>
+                        <label for="cat2radio3">Fishing</label>
+                        <input type="radio" name="radio2" id="cat2radio3" value="Fishing">
+                        <label for="cat2radio4">Soccer</label>
+                        <input type="radio" name="radio2" id="cat2radio4" value="Soccer">
+                        <label for="cat2radio5">Select All</label>
+                        <input type="radio" name="radio2" id="cat2radio5" value="Seclect All">
+                    </div>
+                    <br>
+                    <h4>Check all that Apply:</h4>
+                    <!--Email and Phone controls-->
+                    <input type="checkbox" name="Phone" id="chbox1" value="yes">Phone <br>
+                    <input type="checkbox" name="Email" id="chbox2" value="yes">Email <br>
+                    <br>
+                    <div id="E-mail">
+                        <!--Email input controls-->
+                        <label for="Email">E-mail:</label>
+                        <input type="email" name="Email" id="Email" placeholder="Example@gmail.com" required>
+                    </div>
+                    <br>
+                    <div id="adress">
+                        <fieldset>
+                            <!--Address input controls-->
+                            <legend>Address Form</legend>
+                            <label for="street">Street:</label>
+                            <input type="text" name="street" id="street" size="54"><br>
+                            <br>
+                            <label for="city">City:</label>
+                            <input type="text" name="city" id="city"><br>
+                            <br>
+                            <label for="state">State:</label>
+                            <input type="text" name="state" id="state"><br>
+                            <br>
+                            <label for="zipcode">Zip Code:</label>
+                            <input type="text" name="zipcode" id="zipcode" size="5"><br>
+                        </fieldset><br><br>
+                    </div>
+                    <div id="Buttons">
+                        <!--Reset and subscribe buttons-->
+                        <input type="submit" name="sudmite" id="subscribe" value="Subscribe">
+                        <input type="reset" name="reset" id="reset" value="reset">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!--Footer-->
+        <footer>
+            <p>Ava Werner <a href="mailto:awerner8@stumail.jccc.edu">Email</a></p>
+            <p>Go Back To Main Page <a href="index.html">Home</a></p>
+        </footer>
+    </body>
+</html>
